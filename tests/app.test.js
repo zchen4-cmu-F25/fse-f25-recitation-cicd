@@ -29,6 +29,6 @@ describe("setMessage", () => {
     setMessage(el, "hello");
     expect(el.textContent).toBe("hello");
     setMessage(el, "");
-    expect(el.textContent).toBe("");
+    expect(el.textContent).toBe("Nothing yet");
   });
 });
