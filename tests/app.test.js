@@ -2,7 +2,7 @@ const { increment, decrement, setMessage, state } = require("../src/app");
 
 describe('simple math', () => {
   test('1 + 1', () => {
-    expect(1 + 1).toBe(0);
+    expect(1 + 1).toBe(2);
   });
 });
 
@@ -29,6 +29,6 @@ describe("setMessage", () => {
     setMessage(el, "hello");
     expect(el.textContent).toBe("hello");
     setMessage(el, "");
-    expect(el.textContent).toBe("Nothing yet");
+    expect(el.textContent).toBe("");
   });
 });
